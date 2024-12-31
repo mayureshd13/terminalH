@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hack terminal</title>
+</head>
+<style>
+    body{
+        background: rgb(0, 2, 0);
+    }
+    .para1{
+        margin-top: 5rem;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+    @keyframes dots {
+        0% {content: '';}
+        33% {content: '.';}
+        66% {content:'..'}
+        100%{content : '...'}
+    }
+
+    .lines::after{
+        content:'';
+        display: inline-block;
+        animation: dots 1s infinite steps(3);
+        color: red;
+    }
+    .lines{
+        color: red;
+        font-size: 30px;
+    }
+</style>
+<body>
+    <div class="para1">
+        <p class="lines" id="line1"></p>
+        <p class="lines" id="line2"></p>
+        <p class="lines" id="line3"></p> 
+        <p class="lines" id="line4"></p>
+        <p class="lines" id="line5"></p>
+        
+
+    </div>    
+</body>
+<script src="hacking.js"></script>
+</html>
